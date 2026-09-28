@@ -1,0 +1,128 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.regform {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.banner {
+  background-color: black;
+}
+
+.banner h2 {
+  color: white;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+form .namebox {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+form .namebox input {
+  width: 155px;
+}
+
+form input {
+  font-size: 15px;
+  border: 1px solid black;
+  border-radius: 7px;
+  padding: 10px;
+  width: 320px;
+}
+
+form input[type="submit"] {
+  background-color: black;
+  font-weight: bold;
+  color: white;
+}
+
+form h2 {
+  color: rgb(11, 107, 185);
+}
+
+form a {
+  font-size: 14px;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: bold;
+  color: rgb(11, 107, 185);
+}
+
+.banner {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.response {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  font-weight: bold;
+  width: 320px;
+  padding: 8px;
+  color: red;
+  border: 1px solid red;
+  border-radius: 7px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .banner {
+    display: none;
+  }
+
+  .regform {
+    width: 100%;
+    order: 2;
+  }
+
+  form h2 {
+    font-size: 27px;
+    margin-bottom: 10px;
+  }
+
+  form input {
+    font-size: 16px;
+  }
+
+  form a {
+    font-size: 14px;
+  }
+
+  .response {
+    font-size: 14px;
+  }
+}

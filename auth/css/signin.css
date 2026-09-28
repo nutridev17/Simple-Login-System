@@ -1,0 +1,126 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+  /*set full page padding0, margin0, and any font style*/
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  /*using flexbox to set as row inside container div*/
+}
+
+.banner {
+  height: 100vh; /* set height as screen height to black part with good morning */
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.banner h2 {
+  color: aliceblue;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.loginform {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.loginform form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.loginform form input {
+  padding: 10px;
+  width: 320px;
+  border-color: black;
+  border-radius: 7px;
+  border: 1px solid black;
+  font-size: 15px;
+}
+
+.loginform form h2 {
+  color: rgb(11, 107, 185);
+  margin-bottom: 10px;
+}
+
+.loginbtn {
+  display: block;
+  font-weight: bold;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 7px;
+  border: 0px;
+  width: 320px;
+  text-align: center;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.createbtn {
+  display: block;
+  font-weight: bold;
+  color: white;
+  background-color: green;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 7px;
+  border: 0px;
+  width: 320px;
+  text-align: center;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+form a {
+  font-size: 14px;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: bold;
+  color: rgb(11, 107, 185);
+}
+
+.response {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  font-weight: bold;
+  width: 320px;
+  padding: 8px;
+  color: red;
+  border: 1px solid red;
+  border-radius: 7px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .banner {
+    display: none;
+  }
+
+  .loginform {
+    width: 100%;
+  }
+}
